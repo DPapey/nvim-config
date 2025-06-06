@@ -24,7 +24,7 @@ vim.opt.clipboard = "unnamedplus"
 -- Load Plugins from the 'plugins' directory
 require("lazy").setup("plugins")
 vim.opt.guifont = "FiraCode Nerd Font:h14"
---vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme tokyonight")
 --vim.cmd("colorscheme gruvbox")
 ---True Colour
 

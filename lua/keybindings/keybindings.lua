@@ -1,4 +1,0 @@
--- Basic Keybindings
---vim.g.mapleader = " "  -- Set leader key to space
---vim.keymap.set("n", "<leader>ff", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
---vim.keymap.set("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })  -- Quit Neovim
