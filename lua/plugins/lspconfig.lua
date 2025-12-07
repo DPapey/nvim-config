@@ -49,29 +49,5 @@ return {
       })
     end,
   },
-
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      local lspconfig = require("lspconfig")
-
-      -- Set up YAML language server with settings
-      lspconfig.yamlls.setup({
-        settings = {
-          yaml = {
-            schemas = {},
-            validate = true,
-            hover = true,
-            completion = true,
-          },
-        },
-      })
-
-      -- You can add other servers here, for example:
-      -- lspconfig.ts_ls.setup({})
-      -- lspconfig.html.setup({})
-      -- etc.
-    end,
-  },
 }
 

@@ -1,12 +1,18 @@
 return {
-  "folke/tokyonight.nvim",
-  lazy = true,
-  priority = 1000,
-  opts = { style = "night",
-	transparent = false,},
+	"folke/tokyonight.nvim",
+	lazy = true,
+	terminal_colours = true,
+	priority = 1000,
+	opts = { style = "night", --moon, storm, night, day
+	transparent = true},
 } 
 
-
+--return {
+	--"EdenEast/nightfox.nvim",
+	--lazy = true,
+	--priority = 1000,
+	--transparent = false,
+--}
 
 --return {
 --  "morhetz/gruvbox",

@@ -18,13 +18,24 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.opt.number = true
-
 vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
 
 -- Load Plugins from the 'plugins' directory
 require("lazy").setup("plugins")
-vim.opt.guifont = "FiraCode Nerd Font:h14"
+
+vim.cmd([[
+  syntax reset
+  highlight clear
+  highlight Normal ctermbg=NONE guibg=NONE
+]])
+vim.cmd([[highlight Normal guibg=NONE ctermbg=NONE]])
+vim.cmd([[highlight NormalNC guibg=NONE ctermbg=NONE]])
+
+
 vim.cmd("colorscheme tokyonight")
+--vim.cmd("colorscheme carbonfox")
+
 --vim.cmd("colorscheme gruvbox")
----True Colour
+--True Colour
 

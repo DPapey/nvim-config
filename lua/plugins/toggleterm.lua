@@ -14,7 +14,7 @@ return {
         start_in_insert = true,
         insert_mappings = true,
         persist_size = true,
-        direction = "float",  -- can be "vertical", "horizontal", "float", or "tab"
+        direction = "tab",  -- can be "vertical", "horizontal", "float", or "tab"
         close_on_exit = true,
         shell = vim.o.shell,
       })
